@@ -1,6 +1,7 @@
 
 
 def my_collect(collection)
+  if block_given?
     newArray = Array.new
   counter = 0
   while counter < collection.length
@@ -9,4 +10,5 @@ def my_collect(collection)
   end
   # collection
   newArray
+  end
 end
